@@ -1,0 +1,11 @@
+[package]
+name = "api-sentinel"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8"# HTTP routing and request handling
+tokio = { version = "1", features = ["full"] } # Asynchronous execution
+serde = { version = "1", features = ["derive"] }
+tracing = "0.1" # Structured logging
+tracing-subscriber = { version = "0.3", features = ["env-filter"] } # Collecting and displaying logs
